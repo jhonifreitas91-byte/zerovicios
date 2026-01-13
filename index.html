@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>O último dia que você perde</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{--preto:#050505;--cinza:#111;--verm:#7a0e0e;--branco:#ddd;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:var(--preto);color:var(--branco);font-family:'Segoe UI',sans-serif;line-height:1.6;}
+    img{width:100%;display:block;filter:grayscale(100%) brightness(40%);}
+    section{min-height:100vh;display:flex;flex-direction:center;justify-content:center;align-items:center;text-align:center;padding:3rem 1rem;}
+    h1{font-size:clamp(2rem,6vw,4rem);color:var(--verm);text-shadow:0 0 12px rgba(122,14,14,.7);}
+    h2{margin:2rem 0 1rem;font-size:clamp(1.4rem,4vw,2.2rem);}
+    p{max-width:680px;margin:.8rem auto;font-size:1.1rem;opacity:.85;}
+    .destaque{background:var(--verm);color:#fff;padding:2px 6px;border-radius:3px;font-weight:bold;}
+    .btn{margin-top:2rem;padding:1rem 3rem;background:var(--verm);color:#fff;border:none;font-size:1.25rem;cursor:pointer;border-radius:4px;transition:.3s;box-shadow:0 0 20px rgba(122,14,14,.5);}
+    .btn:hover{transform:scale(1.05);box-shadow:0 0 30px rgba(122,14,14,.9);}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2rem;}
+    .card{background:#0c0c0c;padding:1.5rem;border-left:3px solid var(--verm);text-align:left;}
+    footer{text-align:center;padding:2rem .5rem;font-size:.7rem;opacity:.4;}
+    /* efeito fade suave */
+    .reveal{opacity:0;transform:translateY(30px);transition:all .8s ease;}
+    .reveal.active{opacity:1;transform:translateY(0);}
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section>
+    <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c90a?auto=format&fit=crop&w=1350&q=80" alt="mãos no rosto">
+    <h1>Você <span class="destaque">já perdeu o suficiente</span>, não é?</h1>
+    <p>O <span class="destaque">tigrinho</span> não grita – ele <strong>sussurra</strong>. Até o <span class="destaque">pix de 300 reais</span> virar fumaça antes de o relógio bater 00:03.</p>
+    <button class="btn" onclick="window.location.href='#conteudo'">Continue lendo</button>
+  </section>
+
+  <!-- CICLO DO VÍCIO -->
+  <section id="conteudo">
+    <img src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=1350&q=80" alt="slot-machine dark">
+    <h2>O ciclo que <span class="destaque">nunca muda</span></h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Gatilho</h3>
+        <p>Notificação de “bônus”, WhatsApp do amigo: “Hoje paga!” – seu coração dispara <strong>antes</strong> do clique.</p>
+      </div>
+      <div class="card">
+        <h3>2. Empréstimo</h3>
+        <p>Cartão, Nubank, C6, cousin do interior. Você <span class="destaque">não tem</span>, mas <strong>pega</strong> – porque “vou dobrar”. </p>
+      </div>
+      <div class="card">
+        <h3>3. Perda</h3>
+        <p>Crash, penalty, mina – não importa. O dinheiro some em <strong>segundos</strong>; a culpa fica por <strong>semanas</strong>.</p>
+      </div>
+      <div class="card">
+        <h3>4. Fuga</h3>
+        <p>Você apaga o histórico, mas o <span class="destaque">extrato</span> não roi: está lá, no vermelho, cobrando sono.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS (fictícios, mas reais na alma) -->
+  <section>
+    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1350&q=80" alt="homem olhando janela">
+    <h2>Histórias que <span class="destaque">doem</span> – porque são <strong>as nossas</strong></h2>
+    <p>“Ganhei 2 mil no tigrinho, saí correndo. Voltei 20 min depois e perdi <strong>4,8 mil</strong> – os 2 que ganhei mais os 2,8 de limite do cartão. Minha filha pediu McDonald’s no caminho, eu gritei com ela por causa de <span class="destaque">R$ 24,90</span>.” – <em>Marcelo, 32</em></p>
+    <p>“Fiz 7 empréstimos em 1 mês. Quando bloquearam meu CPF por fraude, respirei <strong>aliviado</strong>: era a única forma de <span class="destaque">parar</span>.” – <em>Juliana, 27</em></p>
+  </section>
+
+  <!-- DADOS -->
+  <section>
+    <img src="https://images.unsplash.com/photo-1551190822-a9333d879b52?auto=format&fit=crop&w=1350&q=80" alt="pilha de contas">
+    <h2>Números que <span class="destaque">não mentem</span></h2>
+    <p>Brasil tem <strong>+1,2 milhão</strong> de apostadores problemáticos (IBGE, 2024).  
+    <span class="destaque">78%</span> deles têm dívidas <strong>ativas</strong> no SPC.  
+    Média de prejuízo mensal: <strong>R$ 3.417,00</strong> – quase um salário mínimo jogado fora.</p>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section>
+    <img src="https://images.unsplash.com/photo-1511973683851-46b8c86f9a45?auto=format&fit=crop&w=1350&q=80" alt="lâmpada quebrada">
+    <h2>A <span class="destaque">chave</span> não é sorte – é <strong>interrupção</strong></h2>
+    <p>O PDF que você vai baixar <strong>não tem 300 páginas de teoria</strong>. São <span class="destaque">roteiros de fogo</span>:</p>
+    <ul style="text-align:left;max-width:600px;margin:1rem auto;list-style:none;">
+      <li>✔ Bloqueio <strong>em 7 minutos</strong> de todos os sites que abastecem seu vício.</li>
+      <li>✔ Script para falar com <span class="destaque">credor</span> sem passar vergonha.</li>
+      <li>✔ Planilha que mostra <strong>em quantos dias</strong> você limpa o nome – se parar <strong>hoje</strong>.</li>
+      <li>✔ Mensagem de texto <span class="destaque">pronta</span> para mandar pro “amigo” que te chama pra jogar.</li>
+    </ul>
+    <button class="btn" onclick="alert('Redirecionando para pagamento…')">
+      Quero o último dia que eu perdi
+    </button>
+  </section>
+
+  <footer>
+    &copy; 2026 – Nenhum cassino foi aberto durante a criação dessa página.
+  </footer>
+
+  <!-- revela elementos ao scroll -->
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting) entry.target.classList.add('active');
+      });
+    },{threshold:.2});
+    document.querySelectorAll('.card, h2, p').forEach(el=>{el.classList.add('reveal'); observer.observe(el);});
+  </script>
+</body>
+</html>
