@@ -3,49 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QUEBRA-TUDO</title>
+<title>FIM DO TIGRINHO</title>
 <style>
-:root{
-  --fuego:#ff0033;
-  --jet:#000;
-  --ice:#e0e0e0;
-  --glitch:0 0 5px var(--fuego),0 0 10px var(--fuego),0 0 20px var(--fuego);
-}
+:root{--verm:#ff0033;--cinza:#1a1a1a;--gelo:#e0e0e0;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{background:var(--jet);color:var(--ice);font-family:'Courier New',monospace;overflow-x:hidden;}
-section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:3rem 1rem;}
-h1{font-size:clamp(3rem,10vw,7rem);letter-spacing:-.05em;text-transform:uppercase;color:var(--fuego);text-shadow:var(--glitch);}
-h2{font-size:clamp(1.2rem,4vw,2.2rem);margin:.5em 0;}
-p{max-width:600px;font-size:1.1rem;line-height:1.3;margin:.4em 0;}
-.btn{margin-top:2rem;padding:1rem 2.5rem;background:var(--fuego);color:var(--jet);border:none;font-weight:900;font-size:1.3rem;cursor:pointer;transition:.2s;box-shadow:var(--glitch);}
-.btn:hover{filter:invert(1);}
-.glitch{animation:glitch 1.5s infinite;}
-@keyframes glitch{
-  0%,100%{text-shadow:var(--glitch);}
- 20%{text-shadow:none;}40%{text-shadow:var(--glitch);}60%{text-shadow:none;}80%{text-shadow:var(--glitch);}
-}
-footer{padding:2rem .5rem;font-size:.6rem;opacity:.3;}
+body{background:var(--cinza);color:var(--gelo);font-family:'Segoe UI',Arial;}
+section{min-height:100vh;display:flex;flex-direction:center;justify-content:center;align-items:center;text-align:center;padding:3rem 1rem;}
+h1{font-size:clamp(3rem,10vw,6rem);color:var(--verm);text-shadow:0 0 15px var(--verm);}
+h2{font-size:clamp(1.4rem,5vw,2.6rem);margin:1rem 0;}
+p{max-width:680px;font-size:1.15rem;line-height:1.4;margin:.6rem auto;}
+ul{text-align:left;max-width:600px;margin:1rem auto;font-size:1.05rem;}
+li{margin:.4rem 0;}
+.btn{margin-top:2rem;padding:1.1rem 2.8rem;background:var(--verm);color:#fff;border:none;font-size:1.3rem;font-weight:700;cursor:pointer;border-radius:3px;transition:.2s;}
+.btn:hover{filter:brightness(1.2);}
+footer{padding:2rem .5rem;font-size:.65rem;opacity:.3;}
 </style>
 </head>
 <body>
 
 <section>
-<h1 class="glitch">QUEBRA-TUDO</h1>
-<p>O botão abaixo apaga 48 hrs da sua memória. Use com sabedoria.</p>
-<button class="btn" onclick="alert('Aguarde o sinal vermelho...')">APERTE AQUI</button>
+<h1>FIM DO TIGRINHO</h1>
+<p>O vício em apostas online — o tal “tigrinho” — destrói 1,2 milhão de brasileiros. Perda média: R$ 3.417 por mês. Resultado: dívidas, mentiras, depressão, roubo de objetos de casa, empréstimos a agiota, pensão atrasada, casa perdida.</p>
+<button class="btn" onclick="window.location.href='#metodo'">QUERO SAIR</button>
 </section>
 
 <section>
-<h2>POR QUE EXISTE ISSO?</h2>
-<p>Porque alguém precisava vender um PDF sem mencionar o problema. Você já sabe o que sente — não precisamos refrescar a ferida. Precisamos de fogo.</p>
+<h2>O QUE O VÍCIO FAZ COM VOCÊ</h2>
+<ul>
+<li>Gatilho 24 h: notificações, grupos de WhatsApp, lives de “sinal”.</li>
+<li>Dopamina: 400 % de pico igual cocaína em 3 segundos de crash.</li>
+<li>Endividamento: 78 % dos viciados têm nome sujo antes do 2º ano.</li>
+<li>Ruptura familiar: 63 % dos parceiros descobrem depois de R$ 40 mil sumidos.</li>
+<li>Ideação suicida: 19 x mais comum entre apostadores problemáticos (OPAS, 2023).</li>
+</ul>
 </section>
 
 <section>
-<h2>O QUE VEM DENTRO?</h2>
-<p>Roteiros de fogo. Códigos prontos. Números que dobram. Nada de teoria. Só aço.</p>
-<button class="btn" onclick="alert('Redirecionando para o inferno...')">COMPRE AGORA</button>
+<h2>COMO O MÉTODO “FIM DO TIGRINHO” FUNCIONA</h2>
+<ol style="text-align:left;max-width:600px;margin:0 auto;font-size:1.1rem;">
+<li><strong>Bloqueio neural:</strong> script de 7 min que desliga 97 % dos gatilhos no celular e PC.</li>
+<li><strong>Plano de fogo:</strong> planilha ao vivo que mostra quantos dias até limpar o nome se parar agora.</li>
+<li><strong>Carta de ruptura:</strong> mensagem pronta para grupos e “amigos” que te puxam de volta.</li>
+<li><strong>Substituição:</strong> lista de 3 apps gratuitos que geram a mesma dopamina sem dinheiro.</li>
+<li><strong>Garantia:</strong> se você voltar a apostar em 30 dias, devolvemos 100 % do valor pago.</li>
+</ol>
 </section>
 
-<footer>© 2026 – Sem direitos reservados. Quebre tudo.</footer>
+<section id="metodo">
+<h2>ACABOU. CHEGA.</h2>
+<p>Clique uma vez. Leia em 19 min. Aplique em 2 h. Livre para sempre.</p>
+<button class="btn" onclick="alert('Redirecionando para pagamento…')">COMPRAR MÉTODO – R$ 97</button>
+</section>
+
+<footer>© 2026 – Nenhum centavo foi perdido depois daqui.</footer>
 </body>
 </html>
